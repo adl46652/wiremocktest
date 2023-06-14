@@ -1,0 +1,33 @@
+{
+  "request": {
+    "url": "/loyalty/partner/v2/points/burn",
+    "method": "POST",
+	"headers": {
+      "Content-Type": {
+        "equalTo": "application/json"
+      },
+	  "Date": {
+        "equalTo": "2023-05-12T14:25:21Z"
+      },
+	  "X-APIKey": {
+        "equalTo": "b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      },
+	  "Authorization": {
+        "equalTo": "Bearer b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      },
+	   "X-Correlation-id": {
+        "equalTo": "b2232fa967d9-903a-69e1-4acc-b11c83ba"
+      }
+    },
+	"bodyPatterns": [ {
+         "equalToJson": "{\"data\":{\"partner\":{\"code\":\"AB\",\"reference\":\"1234567890\"},\"member\":{\"membershipId\":\"1007360491\"},\"products\":[{\"catalogueReference\":\"ABC\",\"description\":\"Kettle purchase\",\"reference\":\"XYZ123\",\"payment\":{\"points\":{\"amount\":5000}}}]}}"
+	}]
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"data\":{\"partner\":{\"reference\":\"1234567890\"},\"member\":{\"membershipId\":\"1007360491\"},\"products\":[{\"certificate\":{\"confirmation\":{\"code\":\"uGtSabrIgVsEME\",\"givenAt\":\"2022-12-31T23:59:59.999Z\",\"status\":\"CAPTURED\"}}}]}}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

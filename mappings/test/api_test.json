@@ -1,0 +1,17 @@
+{
+  "priority": 1,
+  "request": {
+    "url": "/api/test",
+    "method": "GET",
+    "bodyPatterns": [ {
+      "equalToJson": " { \"type\": \"1\" } "
+     }]
+  },
+  "response": {
+    "status": 200,
+    "body": "{ \"test\": \"data11111111111111111\" }",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

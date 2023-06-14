@@ -1,0 +1,29 @@
+{
+  "request": {
+    "url": "/auth/realms/velocity/protocol/openid-connect/token",
+    "method": "POST",
+	"headers": {
+      "Content-Type": {
+        "equalTo": "application/x-www-form-urlencoded"
+      }
+    },
+	"bodyPatterns": [
+      {
+        "contains": "client_id=test-id"
+      },
+	  {
+        "contains": "client_secret=91813ee4-0769-4a7f-9dd3-a12f1f67631e"
+      },
+	  {
+        "contains": "grant_type=client_credentials"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"access_token\":\"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItNUlsX2I0cUktdWFvaEI3d244UHY3WEM2UEktU3BNbmZCRnlJZUx6QTJNIn0.eyJleHAiOjE1OTQyMTY0OTQsImlhdCI6MTU5NDIxNjE5NCwianRpIjoiZjVmNTBjMzEtNWIwNC00OWQ2LTljYmMtM2YwMWU5OTg5ZWQxIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2FwcHNkZXZlbG9wZXJibG9nIiwic3ViIjoiNTlmODFhMzYtYTIyMC00ZmE4LTlhZWEtMzRlN2JhNjY4OTAxIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicGhvdG8tYXBwLWNsaWVudC1jcmVkZW50aWFscyIsInNlc3Npb25fc3RhdGUiOiI3NTAyY2YzMS1iMjEwLTQ3NTQtYjkxOS0wN2UxZDg0OTNmYTMiLCJhY3IiOiIxIiwic2NvcGUiOiJlbWFpbCIsImNsaWVudElkIjoicGhvdG8tYXBwLWNsaWVudC1jcmVkZW50aWFscyIsImNsaWVudEhvc3QiOiIxMjcuMC4wLjEiLCJjbGllbnRBZGRyZXNzIjoiMTI3LjAuMC4xIn0.fQVsLpQJchcofA18FOSr0gtjeo01s9bMFF1ewsI-trrzzNL28QABmm_rsb4-p0iw5fGG3-bEInFeOwxm9sZbQ_O7je_BVMDrlJEs-bAY5cLIQWVqy3P5xCsyFtF6y89LAOCUCGI127W18zoUagLAoi5bGCIgxKled-MYRK8MQPcZzYCp5FkPFMv6Wd8I5m6TZJ6xK0eG79LVDPqj-s9YGfjY_n64uiT9VneYHG261SisgZ978ZMgkjit9CsSTQEW2cBlyeriy133s0E0ycvybLwnHYsGzRs5k8xhgqa3ZYovtZeK2SWARoNSXWQjUCBcndT9teWcZSgQxPIzw\",\"expires_in\":300,\"refresh_expires_in\":1800,\"refresh_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlYWQyMDZmOS05MzczLTQ1OTAtOGQ4OC03YWNkYmZjYTU5MmMifQ.eyJleHAiOjE1OTQyMTc5OTQsImlhdCI6MTU5NDIxNjE5NCwianRpIjoiMDQ0MDEwMjItY2QwNy00MTczLTkwMjctMTQwMGU4Yjg1MzdlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2FwcHNkZXZlbG9wZXJibG9nIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2FwcHNkZXZlbG9wZXJibG9nIiwic3ViIjoiNTlmODFhMzYtYTIyMC00ZmE4LTlhZWEtMzRlN2JhNjY4OTAxIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InBob3RvLWFwcC1jbGllbnQtY3JlZGVudGlhbHMiLCJzZXNzaW9uX3N0YXRlIjoiNzUwMmNmMzEtYjIxMC00NzU0LWI5MTktMDdlMWQ4NDkzZmEzIiwic2NvcGUiOiJlbWFpbCJ9.9qWVA-pyBp0AZ7BUj2Z_RAlQlDSU15kyvpcwEGfXj1k\",\"token_type\":\"bearer\",\"not-before-policy\":0,\"session_state\":\"7502cf31-b210-4754-b919-07e1d8493fa3\",\"scope\":\"test\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
