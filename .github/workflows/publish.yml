@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  push-store-image:
+  push-dev-image:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -31,4 +31,25 @@ jobs:
         run: |
           docker build . --tag ghcr.io/adl46652/wiremocktestdev:latest --build-arg DEPLOYMENT_TYPE=dev
           docker push ghcr.io/adl46652/wiremocktestdev:latest
+
+  push-uat-image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@main
+
+      - name: 'Login to GitHub Container Registry'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{github.actor}}
+          password: ${{secrets.GITHUB_TOKEN}}
+
+      - name: 'Build Inventory Image'
+        run: |
+          docker build . --tag ghcr.io/adl46652/wiremocktestuat:latest --build-arg DEPLOYMENT_TYPE=uat
+          docker push ghcr.io/adl46652/wiremocktestuat:latest
 
