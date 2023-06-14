@@ -1,0 +1,29 @@
+{
+  "data": {
+    "validation": {
+      "score": 0,
+      "matchResults": [
+        {
+          "name": "FIRST_NAME",
+          "weight": 1,
+          "score": 0
+        },
+        {
+          "name": "LAST_NAME",
+          "weight": 1,
+          "score": 0
+        },
+        {
+          "name": "MEMBERSHIP_ID",
+          "weight": 1,
+          "score": 1
+        },
+        {
+          "name": "ACCOUNT_STATUS",
+          "weight": 1,
+          "score": 1
+        }
+      ]
+    }
+  }
+}

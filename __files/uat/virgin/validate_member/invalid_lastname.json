@@ -1,0 +1,12 @@
+{
+  "code": 4001,
+  "title": "Validation Error",
+  "detail": "Validation failed for below fields",
+  "status": 400,
+  "errorFields": [
+    {
+      "field": "data.lastName",
+      "message": "size must be between 2 and 50"
+    }
+  ]
+}

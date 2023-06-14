@@ -29,6 +29,6 @@ jobs:
 
       - name: 'Build Inventory Image'
         run: |
-          docker build . --tag ghcr.io/adl46652/wiremocktest:latest
-          docker push ghcr.io/adl46652/wiremocktest:latest
+          docker build . --tag ghcr.io/adl46652/wiremocktestdev:latest --build-arg DEPLOYMENT_TYPE=dev
+          docker push ghcr.io/adl46652/wiremocktestdev:latest
 

@@ -1,0 +1,33 @@
+{
+  "request": {
+    "url": "/loyalty/partner/v2/members/validate",
+    "method": "POST",
+	"headers": {
+      "Content-Type": {
+        "equalTo": "application/json"
+      },
+	  "Date": {
+        "equalTo": "2023-05-12T14:25:21Z"
+      },
+	  "X-APIKey": {
+        "equalTo": "b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      },
+	  "Authorization": {
+        "equalTo": "Bearer b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      },
+	   "X-Correlation-id": {
+        "equalTo": "123e4567-e89b-12d3-a456-426655440000"
+      }
+    },
+	"bodyPatterns": [ {
+         "equalToJson": "{\"data\":{\"type\":\"EarnMatch\",\"membershipId\":\"970000000022\",\"firstName\":\"Viola\",\"lastName\":\"Valid\"}}"
+	}]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "virgin/validate_member/member_not_found.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

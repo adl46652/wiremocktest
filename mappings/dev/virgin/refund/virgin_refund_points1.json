@@ -1,0 +1,25 @@
+{
+  "request": {
+    "url": "/loyalty/partner/v2/points/refund",
+    "method": "POST",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/json"
+      },
+      "X-APIKey": {
+        "equalTo": "b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      }
+    },
+    "bodyPatterns": [ {
+      "contains": "{\"data\":{\"member\":{\"membershipId\":\"1000343415\"},\"partner\":{\"code\":\"XYZ-test\"},\"burnConfirmationCode\":\"1234567890\",\"reasonCode\":\"INVALID\",\"feedback\":\"Refund Purchases with XYZ\",\"points\":{\"amount\":150}}}",
+      "contains": "{\"code\":\"XYZ-test\"}"
+    }]
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "virgin/refund/refund_points.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

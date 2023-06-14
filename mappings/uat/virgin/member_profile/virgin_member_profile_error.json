@@ -1,0 +1,25 @@
+{
+  "request": {
+    "url": "/loyalty/partner/v2/members/profile",
+    "method": "POST",
+	"headers": {
+      "Content-Type": {
+        "equalTo": "application/json"
+      },
+	  "X-APIKey": {
+        "equalTo": "b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      },
+	  
+	  "Authorization": {
+        "equalTo": "Bearer b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "virgin/member_profile/member_profile_error.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

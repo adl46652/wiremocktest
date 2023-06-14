@@ -1,0 +1,6 @@
+{
+  "code": 39461,
+  "title": "The Loyalty awards amount exceed the maximum amount allowedper transaction.",
+  "detail": "Amount '12300000' is greater than maximum configured amount '10000000'",
+  "status": 400
+}

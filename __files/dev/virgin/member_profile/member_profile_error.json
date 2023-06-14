@@ -1,0 +1,6 @@
+{
+  "code": 1000,
+  "title": "Internal Server Error",
+  "detail": "The server encountered an internal error or misconfiguration and is unable to complete your request.",
+  "status": 500
+}

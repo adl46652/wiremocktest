@@ -1,0 +1,18 @@
+{
+  "data": {
+    "membershipId": "1007360491",
+    "mainTier": {
+      "level": "RED"
+    },
+    "individual": {
+      "identity": {
+        "firstName": "Jonathan",
+        "lastName": "Smith",
+        "title": "MR",
+        "preferredFirstName": "Jon"
+      }
+    },
+    "pointBalance": "10000",
+    "statusCredit": "100"
+  }
+}

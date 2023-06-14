@@ -1,0 +1,6 @@
+{
+  "code": 4002,
+  "title": "Bad Request",
+  "detail": "Cannot convert JSON, please check for any incorrect Enum value or JSON format",
+  "status": 400
+}

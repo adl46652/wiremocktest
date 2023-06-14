@@ -1,0 +1,33 @@
+{
+  "request": {
+    "url": "/loyalty/partner/v2/points/burn",
+    "method": "POST",
+	"headers": {
+      "Content-Type": {
+        "equalTo": "application/json"
+      },
+	  "Date": {
+        "equalTo": "2023-05-12T14:25:21Z"
+      },
+	  "X-APIKey": {
+        "equalTo": "b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      },
+	  "Authorization": {
+        "equalTo": "Bearer b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      },
+	   "X-Correlation-id": {
+        "equalTo": "b2232fa967d9-903a-69e1-4acc-b11c83ba"
+      }
+    },
+	"bodyPatterns": [ {
+         "equalToJson": "{\"data\":{\"partner\":{\"code\":\"xxxxxxxxxxxxxx\",\"reference\":\"1234567890\"},\"totalPrice\":{\"monetaryAmount\":\"250.00\",\"currencyCode\":\"AUD\"},\"member\":{\"membershipId\":\"xxxxxxxxxxxx\"},\"products\":[{\"catalogueReference\":\"xxxxxxxxxxxx\",\"description\":\"Test Points + Pay purchase\",\"reference\":\"XYZ123\",\"quantity\":{\"value\":\"1\"},\"payment\":{\"points\":{\"amount\":100},\"monetary\":[{\"amount\":\"150.00\",\"currencyCode\":\"AUD\"}]}}]}}"
+	}]
+  },
+  "response": {
+    "status": 200,
+	"bodyFileName": "virgin/burn_points/points_plus_pay.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

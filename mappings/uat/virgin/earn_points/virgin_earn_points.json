@@ -1,0 +1,26 @@
+{
+  "request": {
+    "url": "/loyalty/partner/v2/points/earn",
+    "method": "POST",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/json"
+      },
+      "X-APIKey": {
+        "equalTo": "b11c83ba-69cc-4ae1-903a-b2232fa967d9"
+      }
+    },
+    "bodyPatterns": [ {
+      "contains": "{\"data\":{\"member\":{\"membershipId\":\"1000343411\"},\"points\":[{\"amount\":150,\"type\":\"BASE\"}],\"partner\":{\"code\":\"XYZ\",\"reference\":\"123\"},\"activity\":{\"referenceDate\":\"2023-01-01\",\"classification\":\"STD\",\"description\":\"Purchases with XYZ\"}}}",
+      "contains": "{\"membershipId\":\"1000343411\"}"
+
+    }]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "virgin/earn_points/earn_points.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

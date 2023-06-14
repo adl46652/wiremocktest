@@ -1,0 +1,21 @@
+{
+  "data": {
+    "partner": {
+      "reference": "1234567890"
+    },
+    "member": {
+      "membershipId": "1007360491"
+    },
+    "products": [
+      {
+        "certificate": {
+          "confirmation": {
+            "code": "uGtSabrIgVsEME",
+            "givenAt": "2022-12-31T23:59:59.999Z",
+            "status": "CAPTURED"
+          }
+        }
+      }
+    ]
+  }
+}
